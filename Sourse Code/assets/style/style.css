@@ -1,0 +1,97 @@
+/* Шрифты для сайта */
+@font-face {
+	font-family: 'IBM-Text';
+	src: url('~assets/font/IBM/IBMPlexSans-Text.otf');
+	font-style: normal; 
+	font-weight: normal; 
+}
+@font-face {
+	font-family: 'IBM-Bold';
+	src: url('~assets/font/IBM/IBMPlexSans-Bold.otf');
+	font-style: normal;
+	font-weight: bold;
+}
+
+
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'IBM-Text';
+}
+
+  
+/* Фото достопримечательности в балуне */
+.img-link {
+	height: 180px;
+	width: 100%;
+	object-fit: cover;
+}
+	
+/* Ссылки в балуне */
+.name-link {
+	color: white;
+	text-decoration: none;
+	font-family: 'IBM-Bold' !important;
+
+}
+
+/* Весь текст в балуне */
+.link {
+	margin-left: 10px !important;
+	font-family: 'IBM-Text';
+}
+
+/* Полупрозрачное затемнение layout */
+.ymaps-2-1-64-balloon__layout {
+	background: rgba(0, 0, 0, 0.8) !important;
+	border-radius: 5px;
+}
+
+/* Прозрачность content */
+.ymaps-2-1-64-balloon__content {
+	margin: 0px !important;
+	padding: 0px !important;
+	background: rgba(0, 0, 0, 0.0) !important;
+}
+
+/* Нижний ромбик для балуна */
+.ymaps-2-1-64-balloon__tail,
+.ymaps-2-1-64-balloon__tail:after {
+	overflow: hidden;
+	background: rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Кнопка закрытия балуна */
+.ymaps-2-1-64-balloon__close-button {
+	background: url('data:image/svg+xml;utf8,<svg height="20px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="20px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M437.5,386.6L306.9,256l130.6-130.6c14.1-14.1,14.1-36.8,0-50.9c-14.1-14.1-36.8-14.1-50.9,0L256,205.1L125.4,74.5  c-14.1-14.1-36.8-14.1-50.9,0c-14.1,14.1-14.1,36.8,0,50.9L205.1,256L74.5,386.6c-14.1,14.1-14.1,36.8,0,50.9  c14.1,14.1,36.8,14.1,50.9,0L256,306.9l130.6,130.6c14.1,14.1,36.8,14.1,50.9,0C451.5,423.4,451.5,400.6,437.5,386.6z"/></svg>') !important;
+	opacity: 1 !important;
+	height: 20px !important;
+	width: 20px !important;
+}
+
+
+
+/* Навигация */
+
+.boxs-shadow {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/* Мобильная версия */
+@media screen and (max-width: 320px) {
+	/* Размер карты */
+	.mymap {
+		height: 80vh;
+	}
+
+	/* Прозрачность content */
+	.ymaps-2-1-64-balloon__content {
+		background: rgba(0, 0, 0, 0.9) !important;
+	}
+
+	/* Фото достопримечательности в балуне */
+	.img-link {
+		height: 6rem;
+	}
+}
