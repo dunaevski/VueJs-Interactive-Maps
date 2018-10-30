@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="jalta-post" translatesAutoresizingMaskIntoConstraints="NO" id="wEm-UX-Skz">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jny-Kh-nOY">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="lCl-8z-tq5">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jny-Kh-nOY" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="6TP-Ic-9g0"/>
+                            <constraint firstItem="wEm-UX-Skz" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="99O-04-8kB"/>
+                            <constraint firstItem="jny-Kh-nOY" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Pmp-Xb-YOE"/>
+                            <constraint firstItem="jny-Kh-nOY" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="R82-BE-tWl"/>
+                            <constraint firstItem="wEm-UX-Skz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="laR-ra-Trh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wEm-UX-Skz" secondAttribute="trailing" id="mbI-HE-YZ6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wEm-UX-Skz" secondAttribute="bottom" id="sYH-0h-dnU"/>
+                            <constraint firstItem="jny-Kh-nOY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tzT-88-h9E"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="372.99107142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="jalta-post" width="1140" height="758"/>
+    </resources>
+</document>
