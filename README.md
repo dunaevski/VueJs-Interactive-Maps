@@ -1,4 +1,4 @@
-# STATIC
+# My first full-pack project with VueJS and WebView
 
 This directory contains your static files.
 Each file inside this directory is mapped to /.
