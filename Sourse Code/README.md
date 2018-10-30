@@ -1,4 +1,4 @@
-# test
+# VueJs project of Interactive Maps of Yalta
 
 > Nuxt.js + Vuetify.js project
 
